@@ -1,0 +1,10 @@
+--method PUT--key akriti
+
+
+--ip :86
+
+--method GET --key "Tiger"
+
+Reference: https://scene-si.org/2017/09/27/things-to-know-about-http-in-go/
+https://blog.golang.org/json-and-go
+https://gobyexample.com/sha1-hashes
