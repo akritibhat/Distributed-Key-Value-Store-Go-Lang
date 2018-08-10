@@ -1,5 +1,15 @@
---method PUT--key akriti
+This is an in-memory distributed key-value (KV) store using GO programming language. 
+The KV store handles data larger than any one node's memory capacity.
+That is, at any given time, a single node might not have all the data. 
+A server program that accepts HTTP get/post/put requests from the clients and returns a valid response. 
+The server will communicate with it's peer processes (spread across the network) to maintain a consistent view 
+of the key-value database. All communication between the HTTP client and this server are in JSON format.
+A proxy/coordinator process keeps track of available servers and data stored in those servers. 
+A client connects to the proxy/coordinator process to learn the address of a server that it 
+should connect for performing set/get operations. The proxy server also acts as a load-balancer and 
+ensures a uniform workload distribution among various servers.
 
+--method PUT--key akriti
 
 --ip :86
 
